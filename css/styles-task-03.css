@@ -1,0 +1,8 @@
+.flexbox{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+.gallery__item:not(:last-child){
+	margin-right: 20px;
+}
