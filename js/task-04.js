@@ -1,22 +1,14 @@
 let counterValue = Number(document.querySelector('#value').textContent);
-console.log(counterValue);
-console.log(typeof (counterValue));
 const counterValueRef = document.querySelector('#value');
 const decrementBtnRef = document.querySelector('#counter button[data-action="decrement"]');
-console.log(decrementBtnRef);
 const incrementBtnRef = document.querySelector('#counter button[data-action="increment"]');
-console.log(incrementBtnRef);
-function decrement() {
-	console.log('click decrement');
+function decrement(event) {
 	counterValue -= 1;
-	console.log('counterValue :>> ', counterValue);
-		counterValueRef.textContent = counterValue;
+	counterValueRef.textContent = counterValue;
 
 }
-function increment() {
-	console.log('click increment');
+function increment(event) {
 	counterValue += 1;
-	console.log('counterValue :>> ', counterValue);
 	counterValueRef.textContent = counterValue;
 
 }
