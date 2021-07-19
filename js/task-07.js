@@ -2,8 +2,6 @@ const refs = {
 	rangeRef: document.querySelector('#font-size-control'),
 	textRef:document.querySelector('#text')
 }
-console.log(refs.rangeRef);
-console.log(refs.textRef);
 const changeTextSize = refs.rangeRef.addEventListener('input', onChangeValueRange);
 function onChangeValueRange(event) {
 	const newFontSize = Number(event.currentTarget.value);
